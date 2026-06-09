@@ -573,6 +573,94 @@ img {
 
 /*=============== CONTACT ===============*/
 
+.contact__container {
+  row-gap: 4rem;
+}
+
+.contact__form {
+  position: relative;
+  row-gap: 1rem;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: var(--body-color);
+  color: var(--white-color);
+  border: 2px solid var(--first-color);
+  outline: none;
+  padding: 1.25rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-semi-bold);
+
+}
+
+.contact__input::placeholder {
+
+  color: var(--gray-color);
+  transition: color .4s;
+}
+
+.contact__input:focus::placeholder {
+  color: var(--first-color);
+}
+
+.contact__input:autofill {
+  transition: background-color 6000s, color 6000s;
+
+}
+
+.contact__area {
+  height: 10rem;
+  resize: none;
+}
+
+.contact__form .home__button {
+  cursor: pointer;
+}
+
+.contact__message {
+  position: absolute;
+  bottom: -2rem;
+  font-size: var(--small-font-size);
+}
+
+.contact__data {
+  row-gap: 1rem;
+}
+
+.contact__address {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  font-style: initial;
+
+}
+
+.contact__address i {
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.contact__social {
+  display: flex;
+  column-gap: 1rem;
+
+
+}
+
+.contact__link {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  transition: transform .4s, color .4s;
+}
+
+.contact__link:hover {
+  transform: translateY(-.25rem);
+  color: var(--first-color);
+}
+
+
+
 
 /*=============== FOOTER ===============*/
 
@@ -623,7 +711,8 @@ img {
   .home__container,
   .about__container,
   .projects__container,
-  .resume__container {
+  .resume__container,
+  .contact__container {
     grid-template-columns: 400px;
     justify-content: center;
   }
@@ -649,9 +738,18 @@ img {
   }
 
   .projects__container,
-  .resume__container {
+  .resume__container,
+  .contact__container {
     grid-template-columns: repeat(2, 350px);
 
+  }
+
+  .contact__container {
+    align-content: flex-start;
+  }
+
+  .contact__form {
+    order: 1;
   }
 
 
@@ -777,6 +875,34 @@ img {
   .resume__list {
     row-gap: 3rem;
   }
+
+  .contact {
+    padding-block: 8rem 4rem;
+  }
+
+  .contact__container {
+    grid-template-columns: 310px 450px;
+    column-gap: 10rem;
+  }
+
+  .contact__content {
+    row-gap: 2rem;
+  }
+
+  .contact__data {
+    row-gap: 1.5rem;
+  }
+
+  .contact__form .home__button {
+    width: max-content;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+  .contact__area {
+    height: 12rem;
+  }
+
 
 
 
