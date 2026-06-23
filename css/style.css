@@ -20,8 +20,8 @@
       -> Choose any color 
       -> Copy the color mode (HSL)
   */
-  --hue: 180;
-  --first-color: hsl(var(--hue), 80%, 48%);
+  --hue: 270;
+  --first-color: hsl(var(--hue), 100%, 81%);
   --first-color-alt: hsl(var(--hue), 80%, 44%);
   --white-color: hsl(var(--hue), 8%, 92%);
   --black-color: hsl(var(--hue), 4%, 8%);
@@ -242,6 +242,12 @@ img {
 
 
 /* Active link */
+
+
+
+.active-link::after {
+  width: 60%;
+}
 
 
 /*=============== HOME ===============*/
@@ -663,15 +669,117 @@ img {
 
 
 /*=============== FOOTER ===============*/
+.footer {
+  padding: 5rem 2rem;
+}
+
+.footer__container {
+  row-gap: 2rem;
+}
+
+.footer__links,
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  color: var(--white-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  justify-self: center;
+  margin-bottom: 1rem;
+  transition: color .4s;
+}
+
+.footer__logo:hover {
+  color: var(--first-color);
+}
+
+.footer__links {
+  column-gap: 2rem;
+
+}
+
+.footer__link {
+  color: var(--white-color);
+  transition: color .4s;
+}
+
+.footer__link:hover {
+  color: var(--first-color);
+}
+
+.footer__social {
+  column-gap: 2rem;
+
+}
+
+.footer__social-link {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  transition: transform .4s, color .4s;
+}
+
+.footer__social-link:hover {
+  color: var(--first-color);
+  transform: translateY(-.25rem);
+}
+
+.footer__copy {
+  display: block;
+  margin-top: 5rem;
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--gray-color);
+
+}
 
 
 /*=============== SCROLL BAR ===============*/
 
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(0, 0%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: hsl(0, 0%, 25%);
+  border-radius: .5rem;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
 
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  color: var(--first-color);
+  background-color: var(--body-color);
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, .5);
+  padding: 6px;
+  border-radius: .25rem;
+  transition: bottom .4s, transform .4s;
+  z-index: var(--z-tooltip);
+
+
+}
+
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+}
 
 
 /* Show Scroll Up */
+.show-scroll {
+  bottom: 3rem;
+}
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -903,8 +1011,31 @@ img {
     height: 12rem;
   }
 
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 
 
+  }
+
+  .footer__logo {
+    font-size: var(--h2-font-size);
+    justify-self: flex-start;
+    margin-bottom: 0;
+
+  }
+
+  .footer__links {
+    column-gap: 3rem;
+  }
+
+  .footer__social {
+    justify-self: flex-end;
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
 
 
 
@@ -917,3 +1048,9 @@ img {
 
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and(min-width:2048px) {
+  body {
+    zoom: 1.2;
+  }
+
+}
