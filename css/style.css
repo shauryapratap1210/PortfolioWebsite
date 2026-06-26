@@ -277,10 +277,15 @@ img {
 }
 
 .home__img {
+<<<<<<< HEAD
   width: 250px;
   filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
   position: relative;
   top: 70px;
+=======
+  width: 200px;
+  filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 }
 
 .home__social {
@@ -440,11 +445,16 @@ img {
 }
 
 .about__img {
+<<<<<<< HEAD
 
   width: 260px;
   filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
   position: relative;
   top: 60px;
+=======
+  width: 200px;
+  filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 }
 
 /*=============== PROJECTS ===============*/
@@ -513,6 +523,7 @@ img {
   pointer-events: initial;
 }
 
+<<<<<<< HEAD
 /*=============== CODING PROFILES ===============*/
 .profiles__subtitle-main {
   text-align: center;
@@ -622,6 +633,8 @@ img {
   width: 100%;
 }
 
+=======
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 /*=============== RESUME ===============*/
 .resume__container {
   row-gap: 4rem;
@@ -911,9 +924,13 @@ img {
 
   .home__img,
   .about__img {
+<<<<<<< HEAD
     width: 200px;
     position: relative;
     top: 50px;
+=======
+    width: 170px;
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 
   }
 
@@ -935,7 +952,10 @@ img {
   .home__container,
   .about__container,
   .projects__container,
+<<<<<<< HEAD
   .profiles__container,
+=======
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
   .resume__container,
   .contact__container {
     grid-template-columns: 400px;
@@ -943,8 +963,11 @@ img {
   }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 @media screen and (min-width:768px) {
 
   .home__container,
@@ -965,7 +988,10 @@ img {
   }
 
   .projects__container,
+<<<<<<< HEAD
   .profiles__container,
+=======
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
   .resume__container,
   .contact__container {
     grid-template-columns: repeat(2, 350px);
@@ -1086,12 +1112,15 @@ img {
 
   }
 
+<<<<<<< HEAD
   .profiles__container {
     grid-template-columns: repeat(2, 380px);
     column-gap: 4rem;
     justify-content: center;
   }
 
+=======
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
   .resume {
     padding-block: 8rem 4rem;
   }
@@ -1173,6 +1202,7 @@ img {
 
 
 
+<<<<<<< HEAD
 /*=============== CHATBOT WIDGET ===============*/
 .chat__widget {
   position: fixed;
@@ -1615,4 +1645,12 @@ img {
   body {
     zoom: 1.2;
   }
+=======
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and(min-width:2048px) {
+  body {
+    zoom: 1.2;
+  }
+
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 }

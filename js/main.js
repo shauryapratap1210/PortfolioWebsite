@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*=============== CODING PROFILES DATA & RENDERING ===============*/
 const codingProfiles = [
     {
@@ -103,6 +104,8 @@ if (profilesSection) {
     profilesObserver.observe(profilesSection);
 }
 
+=======
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -236,5 +239,9 @@ sr.reveal(`.about__content, .contact__content`, { origin: 'bottom' })
 sr.reveal(`.about__image, .contact__form`, { delay: 300 })
 
 
+<<<<<<< HEAD
 sr.reveal(`.projects__card`, { interval: 100 })
 sr.reveal(`.profiles__card`, { interval: 100 })
+=======
+sr.reveal(`.projects__card`, { interval: 100 })
+>>>>>>> a8b8d140ddd4d8cd1174fd239475e0ba9b703203
